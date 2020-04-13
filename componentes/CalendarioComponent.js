@@ -4,25 +4,27 @@ import { ListItem } from 'react-native-elements';
 
 function Calendario(props) {
 
-    const renderCalendarioItem = ({item, index}) => {
+    const renderCalendarioItem = ({ item, index }) => {
 
         return (
-                <ListItem
-                    key={index}
-                    title={item.nombre}
-                    subtitle={item.descripcion}
-                    hideChevron={true}
-                    leftAvatar={{ source: require('./imagenes/40Años.png')}}
-                  />
+            <ListItem
+                key={index}
+                title={item.nombre}
+                subtitle={item.descripcion}
+                hideChevron={true}
+                leftAvatar={{ source: require('./imagenes/40Años.png') }}
+                onPress={() => props.onPress(item.id)}
+                leftAvatar={{ source: require('./imagenes/40Años.png') }}
+            />
         );
     };
 
     return (
-            <FlatList 
-                data={props.excursiones}
-                renderItem={renderCalendarioItem}
-                keyExtractor={item => item.id.toString()}
-                />
+        <FlatList
+            data={props.excursiones}
+            renderItem={renderCalendarioItem}
+            keyExtractor={item => item.id.toString()}
+        />
     );
 }
 
