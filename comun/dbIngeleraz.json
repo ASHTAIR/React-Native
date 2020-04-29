@@ -1,0 +1,246 @@
+{
+  "dishes": [
+    {
+      "id": 0,
+      "name": "Bisaurín",
+      "image": "images/bisaurin.png",
+      "featured": true,
+      "description": "El fin de semana del 26 y 27 de Enero iremos a Lizara para pasar un fin de semana de montaña. La idea es realizar el sábado unas prácticas invernales para todo aquel que no esté familiarizado con el uso de crampones y piolet, para el domingo poner en práctica lo aprendido subiendo al Bisaurín. Las personas que no quieran venir el sábado, podrán asimismo hacer la salida del domingo al Bisaurin partiendo el Domingo desde Pamplona y reuniéndose con el resto en el Refugio de Lizara sobre las 8:00 de la mañana."
+    },
+    {
+      "id": 1,
+      "name": "Jaizkibel",
+      "image": "images/jaizkibel.png",
+      "featured": false,
+      "description": "Partiendo del puerto pesquero de Hondarribia, junto al castillo de San Telmo, subiremos a Jaizkibel (545m.) siguiendo el Talaia Bidea que bordea el litoral, para terminar bajando a Pasai Donibane. Se trata de una ruta de cierta dureza, con algún paso expuesto pero reforzado, con un desnivel cercano a los 1000 metros en unos 23 km. de caminata."
+    },
+    {
+      "id": 2,
+      "name": "Punta Escarra",
+      "image": "images/puntaEscarra.png",
+      "featured": false,
+      "description": "Este domingo saldremos a Punta Escarra. Saldremos del Puente de los Peregrinos (Canfranc Pueblo) para subir hasta el refugio libre de Ip. Desde ahí cogeremos un pequeño valle hacia el collado que sube de Izas. El collado queda en la base de la pirámide final de Punta Escarra. A continuación hay una trepada fácil pero expuesta que lleva a la cima. Se puede volver por un camino paralelo al de ida, al otro lado del rio."
+    },
+    {
+      "id": 3,
+      "name": "Pala de Ip",
+      "image": "images/palaDeIp.png",
+      "featured": false,
+      "description": "Este fin de semana subiremos los picos de pala de IP (2779m) y Collarada (2886m). El sábado saldremos a las 8:00 de la mañana desde el antiguo club e iremos hasta Canfranc, de donde saldremos. El sábado subiremos a pala de IP y bajaremos al refugio libre del embalse de IP, superando unos 1600 m de desnivel. El domingo subiremos a Collarada y vuelta a Iruña."
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "dishId": 0,
+      "rating": 5,
+      "comment": "Mile esker, Gaztaroa!",
+      "author": "Dani Tiendica",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 1,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Neka neka eginda, baina bueltatuko gara, dudik gabe!",
+      "author": "Aitzi Mendi",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 2,
+      "dishId": 0,
+      "rating": 3,
+      "comment": "Hemos disfrutado mucho, aunque al final se hizo un poco largo. Volveremos!",
+      "author": "Marta Huarte",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 3,
+      "dishId": 0,
+      "rating": 4,
+      "comment": "Muy buena gente, pero esto no es para mi; gracias por vuestro apoyo!",
+      "author": "Ziriki",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 4,
+      "dishId": 0,
+      "rating": 2,
+      "comment": "Estuvo genial! Alguien sabe cuándo es la próxima? Eskerrik asko!",
+      "author": "Manu Colino",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 5,
+      "dishId": 1,
+      "rating": 2,
+      "comment": "Estuvo genial! Alguien sabe cuándo es la próxima? Eskerrik asko!",
+      "author": "Manu Colino",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 6,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Muy buena gente, pero esto no es para mi; gracias por vuestro apoyo!",
+      "author": "Ziriki",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 7,
+      "dishId": 1,
+      "rating": 3,
+      "comment": "Hemos disfrutado mucho, aunque al final se hizo un poco largo. Volveremos!",
+      "author": "Marta Huarte",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 8,
+      "dishId": 1,
+      "rating": 4,
+      "comment": "Neka neka eginda, baina bueltatuko gara, dudik gabe!",
+      "author": "Aitzi Mendi",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 9,
+      "dishId": 1,
+      "rating": 2,
+      "comment": "Mile esker, Gaztaroa!",
+      "author": "Dani Tiendica",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 10,
+      "dishId": 2,
+      "rating": 5,
+      "comment": "Neka neka eginda, baina bueltatuko gara, dudik gabe!",
+      "author": "Aitzi Mendi",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 11,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Hemos disfrutado mucho, aunque al final se hizo un poco largo. Volveremos!",
+      "author": "Marta Huarte",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 12,
+      "dishId": 2,
+      "rating": 3,
+      "comment": "Mile esker, Gaztaroa!",
+      "author": "Dani Tiendica",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 13,
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Estuvo genial! Alguien sabe cuándo es la próxima? Eskerrik asko!",
+      "author": "Manu Colino",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 14,
+      "dishId": 2,
+      "rating": 2,
+      "comment": "Muy buena gente, pero esto no es para mi; gracias por vuestro apoyo!",
+      "author": "Ziriki",
+      "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 15,
+      "dishId": 3,
+      "rating": 5,
+      "comment": "Mile esker, Gaztaroa!",
+      "author": "Dani Tiendica",
+      "date": "2012-10-16T17:57:28.556094Z"
+    },
+    {
+      "id": 16,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "Estuvo genial! Alguien sabe cuándo es la próxima? Eskerrik asko!",
+      "author": "Manu Colino",
+      "date": "2014-09-05T17:57:28.556094Z"
+    },
+    {
+      "id": 17,
+      "dishId": 3,
+      "rating": 3,
+      "comment": "Muy buena gente, pero esto no es para mi; gracias por vuestro apoyo!",
+      "author": "Ziriki",
+      "date": "2015-02-13T17:57:28.556094Z"
+    },
+    {
+      "id": 18,
+      "dishId": 3,
+      "rating": 4,
+      "comment": "Hemos disfrutado mucho, aunque al final se hizo un poco largo. Volveremos!",
+      "author": "Marta Huarte",
+      "date": "2013-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 19,
+      "dishId": 3,
+      "rating": 2,
+      "comment": "Nada que objetar ni comentar...",
+      "author": "Anónimo",
+      "date": "2011-12-02T17:57:28.556094Z"
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "40 años de historia!",
+      "image": "images/40Años.png",
+      "featured": true,
+      "description": "40 años organizando salidas para conocer y disfrutar la montaña"
+    }
+  ],
+  "leaders": [
+    {
+      "id": 0,
+      "name": "Excursiones y actividades",
+      "image": "images/40Años.png",
+      "featured": false,
+      "description": "Actualmente en Gaztaroa se imparten cursillos a los socios y socias que lo necesitan, se organizan jornadas invernales de iniciación y perfeccionamiento de alpinismo, escalada, orientación, etc. Poco a poco se ha ido creando un grupo muy majo de gente comprometida con el Gaztaroa sin importar no tanto a dónde se va, sino cómo se va. Actualmente en Gaztaroa somos 80 socios y socias con aproximadamente 150 licencias federativas."
+    },
+    {
+      "id": 1,
+      "name": "Asóciate a Gaztaroa!",
+      "image": "images/bisaurin.png",
+      "featured": false,
+      "description": "Hola Montañera! Hacerte socia del Club de Montaña Gaztaroa es muy fácil. Pásate de 20:00 a 21:00 por las oficinas del Club un jueves de las semanas que hay salida y podrás darnos la información necesaria para hacerte socio. Al hacerte socio del Club, podrás participar activamente en la planificación de cada temporada, podrás consultar nuestra biblioteca de mapas, libros y revistas y tendrás descuento en la tarifa del bus en las actividades en las que lo utilicemos. Anímate!"
+    },
+    {
+      "id": 2,
+      "name": "Prueba de esfuerzo",
+      "image": "images/pruebaDeEsfuerzo.png",
+      "featured": false,
+      "description": "La prueba de esfuerzo, también conocida como ergometría, consiste en un examen de la resistencia física a través de diversos ejercicios que sirven para valorar el pronóstico de una enfermedad cardiaca en estudio o ya diagnosticada."
+    },
+    {
+      "id": 3,
+      "name": "Fedérate",
+      "image": "images/federarse.png",
+      "featured": true,
+      "description": "Si estás interesado en realizar actividades de montaña de una forma continuada, resulta muy recomendable federarse. A través del seguro de la federación podrás ser rescatado en caso de accidente y además los gastos médicos estarán también cubiertos por el seguro (además del rescate). La Federación Navarra de Deportes de Montaña y Escalada (FNDME) renueva los seguros anualmente (de Enero a Diciembre). Así aunque la campaña de federación dura todo el año, la campaña se abre en diciembre de cada año."
+    }
+  ],
+  "feedback": [
+    {
+      "firstname": "fff",
+      "lastname": "ffff",
+      "telnum": "ffff",
+      "email": "fff@fff.fff",
+      "agree": true,
+      "contactType": "Email",
+      "message": "fff",
+      "date": "2017-12-04T09:41:49.890Z",
+      "id": 1
+    }
+  ]
+}

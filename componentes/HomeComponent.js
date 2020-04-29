@@ -4,8 +4,7 @@ import { Card } from 'react-native-elements';
 import { EXCURSIONES } from '../comun/excursiones';
 import { CABECERAS } from '../comun/cabeceras';
 import { ACTIVIDADES } from '../comun/actividades';
-
-import { baseUrl } from '../comun/comun'
+import { baseUrl } from '../comun/comun';
 
 function RenderItem(props) {
     
