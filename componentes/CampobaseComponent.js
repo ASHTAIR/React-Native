@@ -4,15 +4,15 @@ import Calendario from './CalendarioComponent';
 import QuienesSomos from './QuienesSomosComponent';
 import Contacto from './ContactoComponent';
 import DetalleExcursion from './DetalleExcursionComponent';
+import PruebaEsfuerzo from './PruebaEsfuerzoComponent';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import { NavigationContainer, DrawerActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator,   DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
+import { createDrawerNavigator,   DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
 import { Icon } from 'react-native-elements';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Constants from 'expo-constants';
 import { colorGaztaroaClaro, colorGaztaroaOscuro } from '../comun/comun';
-
 import { connect } from 'react-redux';
 import { fetchExcursiones, fetchComentarios, fetchCabeceras, fetchActividades } from '../redux/ActionCreators';
 
@@ -135,6 +135,30 @@ function ContactoNavegador({ navigation }) {
   );
 }
 
+function EsfuerzoNavegador({ navigation }) {
+  return (
+    <Stack.Navigator
+      initialRouteName="Prueba de esfuerzo"
+      headerMode="screen"
+      screenOptions={{
+        headerTintColor: '#fff',
+        headerStyle: { backgroundColor: colorGaztaroaOscuro },
+        headerTitleStyle: { color: '#fff' },
+        headerLeft: () => (<Icon name="menu" size={28} color= 'white' onPress={ () => navigation.dispatch(DrawerActions.toggleDrawer()) }/>),
+      }}
+    >
+      <Stack.Screen
+        name="Prueba de esfuerzo"
+        component={PruebaEsfuerzo}
+        options={{
+          title: 'Prueba de esfuerzo',
+        }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+
 function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props}>
@@ -210,8 +234,20 @@ function DrawerNavegador() {
             )
             }}
         />
+        <Drawer.Screen name="Prueba de esfuerzo" component={EsfuerzoNavegador}
+          options={{
+            drawerIcon: ({ tintColor}) => (
+              <Icon
+              name='heartbeat'
+              type='font-awesome'            
+              size={22}
+              color={tintColor}
+              />
+            )
+            }}
+        />
       </Drawer.Navigator>
-  );
+  ); 
 }
 
 class Campobase extends Component {
