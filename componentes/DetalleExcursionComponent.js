@@ -5,7 +5,6 @@ import { baseUrl } from '../comun/comun';
 import { connect } from 'react-redux';
 import { postFavorito, postComentario } from '../redux/ActionCreators';
 import { colorGaztaroaOscuro } from '../comun/comun';
-import { fetchExcursiones, fetchComentarios, fetchCabeceras, fetchActividades } from '../redux/ActionCreators';
 
 const mapStateToProps = state => {
     return {

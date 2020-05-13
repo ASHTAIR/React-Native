@@ -154,6 +154,11 @@ export const addFavorito = (excursionId) => ({
     payload: excursionId
 });
 
+export const borrarFavorito = (excursionId) => ({
+    type: ActionTypes.BORRAR_FAVORITO,
+    payload: excursionId
+});
+
 export const postComentario = (comentario) => (dispatch) => {
     var da = new Date();
     var date = da.toISOString();
