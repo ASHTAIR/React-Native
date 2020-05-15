@@ -7,14 +7,8 @@ export const favoritos = (state = [], action) => {
                 return state;
             else
                 return state.concat(action.payload);
-
-        case ActionTypes.BORRAR_FAVOTITO:
-            if (state.some(el => el === action.payload))               
-                return state.filter(excursionId => excursionId!==action.payload);
-            else
-                return state;
-
+                
         default:
-            return state;
-    }
+          return state;
+      }
 };
