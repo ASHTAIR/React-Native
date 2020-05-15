@@ -9,7 +9,7 @@ import VistaFavoritos from './VistaFavoritosComponent';
 import { View, StyleSheet, Image, Text } from 'react-native';
 import { NavigationContainer, DrawerActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList, DrawerItem } from '@react-navigation/drawer';
+import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
 import { Icon } from 'react-native-elements';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Constants from 'expo-constants';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FlatList, Alert, TouchableHighlight } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { StyleSheet, FlatList, Alert, TouchableHighlight, Animated, Text, View } from 'react-native';
+import { ListItem, Icon } from 'react-native-elements';
 import Swipeout from 'react-native-swipeout';
 import { baseUrl } from '../comun/comun';
 import { connect } from 'react-redux';
@@ -19,6 +19,30 @@ const mapDispatchToProps = dispatch => ({
 })
 
 class VistaFavoritos extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.nuevaanimacion = new Animated.ValueXY({ x: 10, y: 10 })
+        this.state = {
+            derecha: true,
+        };
+    }
+
+    _mover = () => {
+        if (this.state.derecha) {
+            Animated.spring(this.nuevaanimacion, {
+                toValue: { x: 300, y: 10 },
+            }).start()
+            this.setState({ derecha: false });
+        } else {
+            Animated.spring(this.nuevaanimacion, {
+                toValue: { x: 10, y: 10 },
+            }).start()
+            this.setState({ derecha: true });
+        }
+    }
+
 
     borrarFavorito(excursionId) {
         this.props.borrarFavorito(excursionId);
@@ -83,15 +107,52 @@ class VistaFavoritos extends Component {
         }
         else {
             return (
-                <FlatList
-                    data={this.props.excursiones.excursiones.filter((excursion) => this.props.favoritos.includes(excursion.id))}
-                    renderItem={renderFavoritoItem}
-                    keyExtractor={item => item.id.toString()}
-                />
+                <View>
+                    <Animated.View style={[styles.tennisBall, this.nuevaanimacion.getLayout()]}>
+                        <TouchableHighlight style={styles.button} onPress={this._mover}>
+                            <Icon
+                                name='heart'
+                                type='font-awesome'
+                                size={36}
+                                color='red'
+                            />
+                        </TouchableHighlight>
+                    </Animated.View>
+                    <FlatList
+                        data={this.props.excursiones.excursiones.filter((excursion) => this.props.favoritos.includes(excursion.id))}
+                        renderItem={renderFavoritoItem}
+                        keyExtractor={item => item.id.toString()}
+                    />
+                </View>
             );
         }
 
     };
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#ecf0f1',
+    },
+    tennisBall: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(52, 52, 52, 0)',
+        borderRadius: 30,
+        width: 40,
+        height: 50,
+    },
+    button: {
+        paddingTop: 10,
+        paddingBottom: 35,
+    },
+    buttonText: {
+        fontSize: 24,
+        color: '#333',
+    }
+});
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(VistaFavoritos);

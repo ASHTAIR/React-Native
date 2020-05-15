@@ -159,22 +159,13 @@ export const borrarFavorito = (excursionId) => ({
     payload: excursionId
 });
 
-export const postComentario = (comentario) => (dispatch) => {
-    var da = new Date();
-    var date = da.toISOString();
-    var comment = {
-        excursionID : comentario[0].toString(),
-        valoracion : comentario[1],
-        autor : comentario[2],
-        comentario : comentario[3],
-        dia : date,
-    }
+export const postComentario = (newComentario)  => (dispatch) => {
     setTimeout(() => {
-        dispatch(addComentario(comment));
+        dispatch(addComentario(newComentario));
     }, 2000);
 };
 
-export const addComentario = (comentario) => ({
+export const addComentario = (newComentario) => ({
     type: ActionTypes.ADD_COMENTARIO,
-    payload: comentario
+    payload: newComentario
 });

@@ -4,6 +4,7 @@ import { Card } from 'react-native-elements';
 import { baseUrl } from '../comun/comun';
 import { connect } from 'react-redux';
 import { IndicadorActividad } from './IndicadorActividadComponent';
+import * as Animatable from 'react-native-animatable';
 
 const mapStateToProps = state => {
     return {
@@ -56,17 +57,23 @@ class Home extends Component {
 
         return (
             <ScrollView>
-                <RenderItem item={this.props.cabeceras.cabeceras.filter((cabecera) => cabecera.destacado)[0]} isLoading={this.props.excursiones.isLoading}
-                    errMess={this.props.excursiones.errMess}
-                />
+                <Animatable.View animation="fadeInRight" duration={1000} delay={2000}>
+                    <RenderItem item={this.props.cabeceras.cabeceras.filter((cabecera) => cabecera.destacado)[0]} isLoading={this.props.excursiones.isLoading}
+                        errMess={this.props.excursiones.errMess}
+                    />
+                </Animatable.View>
 
-                <RenderItem item={this.props.excursiones.excursiones.filter((excursion) => excursion.destacado)[0]} isLoading={this.props.excursiones.isLoading}
-                    errMess={this.props.excursiones.errMess}
-                />
+                <Animatable.View animation="fadeInRight" duration={2500} delay={2000}>
+                    <RenderItem item={this.props.excursiones.excursiones.filter((excursion) => excursion.destacado)[0]} isLoading={this.props.excursiones.isLoading}
+                        errMess={this.props.excursiones.errMess}
+                    />
+                </Animatable.View>
 
-                <RenderItem item={this.props.actividades.actividades.filter((actividad) => actividad.destacado)[0]} isLoading={this.props.excursiones.isLoading}
-                    errMess={this.props.excursiones.errMess}
-                />
+                <Animatable.View animation="fadeInRight" duration={4000} delay={2000}>
+                    <RenderItem item={this.props.actividades.actividades.filter((actividad) => actividad.destacado)[0]} isLoading={this.props.excursiones.isLoading}
+                        errMess={this.props.excursiones.errMess}
+                    />
+                </Animatable.View>
 
             </ScrollView>
         );
